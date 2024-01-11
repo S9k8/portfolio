@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salija khadka</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/4acca73afe.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="active-header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="./assets/html/services.html" target="_self">Services</a></li>
+                    <li><a href="assets/html/projects.html" target="_self">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> UI/UX Designer</p>
+                <h1> Hi, I'm <span>Salija</span><br> Khadka from Australia</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------About----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/phone-background.jpg"> 
+                </div>
+                <div class="about-col-2">
+                  <h1 class="sub-title">About Me</h1> 
+                  <p>In a manner of speaking, a style guide is a younger sibling 
+                    to a design system. In a design system, you would attempt to 
+                    define every little ruleand element involved in your work, 
+                    taking into consideration all of the possible component states.
+                    When you have multiple web professionals working on one site,
+                     its important to consolidate all your design decisions.</p> 
+
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021-current</span><br>Designing Web/App interfaces</li>
+                            <li><span>2019</span><br>Designing Web/App interfaces</li>
+                            <li><span>2020</span><br>Building Android/ios apps</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------Contact-------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fas fa-phone-square"></i>00000011111-1111</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169; Salija. All Rights Reserved</p>
+    </div>
+
+    <!-- Implementation of Inline JavaScript -->
+    <script>
+        // To display and close side-menus on the small screen devices
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+        sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

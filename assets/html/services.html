@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Salija khadka</title>
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../main.js"></script>
+    <script src="https://kit.fontawesome.com/4acca73afe.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="../images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="../../index.html" target="_self">Home</a></li>
+                    <li><a href="../../index.html" target="_self">About</a></li>
+                    <li><a href="#" class="active-header">Services</a></li>
+                    <li><a href="./projects.html" target="_self">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> UI/UX Designer</p>
+                <h1> Hi, I'm <span>Salija</span><br> Khadka from Australia</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------Services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam non facilis iusto modi explicabo doloribus. Magnam cupiditate tempora corporis officiis quaerat! Doloremque aperiam magni vel eius, ipsum quas. Repellendus, accusantium.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam non facilis iusto modi explicabo doloribus. Magnam cupiditate tempora corporis officiis quaerat! Doloremque aperiam magni vel eius, ipsum quas. Repellendus, accusantium.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam non facilis iusto modi explicabo doloribus. Magnam cupiditate tempora corporis officiis quaerat! Doloremque aperiam magni vel eius, ipsum quas. Repellendus, accusantium.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------Contact-------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fas fa-phone-square"></i>00000011111-1111</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &#169; Salija. All Rights Reserved</p>
+    </div>
+
+    <!-- Implementation of Inline JavaScript -->
+    <script>
+        // To display and close side-menus on the small screen devices
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+        sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
