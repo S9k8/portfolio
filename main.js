@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Add your form validation logic here if needed
 
         // Trigger the popup (you can customize this part)
-        alert('Form submitted successfully!');
+        alert('✅Form submitted successfully!✅');
         form.reset();
     });
 });
