@@ -17,8 +17,8 @@
                 <ul id="sidemenu">
                     <li><a href="#header" class="active-header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="./assets/html/services.html" target="_self">Services</a></li>
-                    <li><a href="assets/html/projects.html" target="_self">Portfolio</a></li>
+                    <li><a href="./assets/html/services.html#services" target="_self">Services</a></li>
+                    <li><a href="assets/html/projects.html#portfolio" target="_self">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
@@ -93,11 +93,11 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form id="contactForm">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your E-mail" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <button id="submitBtn" type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
             </div>

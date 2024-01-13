@@ -14,5 +14,26 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+// Pop up message when the form is submitted
+document.addEventListener('DOMContentLoaded', function () {
+    // Wait for the DOM to be fully loaded
+
+    var form = document.getElementById('contactForm');
+    var submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Add your form validation logic here if needed
+
+        // Trigger the popup (you can customize this part)
+        alert('Form submitted successfully!');
+        form.reset();
+    });
+});
+
+
+
 
 
